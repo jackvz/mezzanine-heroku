@@ -1,0 +1,16 @@
+language: python
+python:
+- '3.6'
+install:
+- pip install -r requirements.txt
+script: pytest test/test_mezzanine_heroku.py
+deploy:
+  provider: pypi
+  server:
+    # All changes in the master branch are deployed to Test PyPI
+    master: https://test.pypi.org/legacy/
+    # All changes in the production branch are deployed to PyPI
+    production: https://upload.pypi.org/legacy/
+  user: jackvanzyl
+  password:
+    secure: P9+GutkKly2r/nvOzKfnS0sT2cW1CwR1cimLkp2ysGUnBx+klcBfmhzAUxFhRKMo+mscJWJzo3xm94vITHPUV00mtHxnHfAvsFQPplqYme3TtYy2fSBvK41tIdCM1csmtChbxfw+ykmb7pIR7pk7va9XJ0dwc5XN5G1IVXkdomKWt+E5/+eQht/zmCYEFZrJcQHsq/k3gXskIaQyGj1lUIEBs6Hv1iUk2YEwuIrKmg+lSbnYE8C4nsU1J35bEr5lilKVk5lxr6c0HA3EKwb3joGBh9bCqedZKwIBh3SKh5cioUHxQyfsPyPUt7LNf0yMeUVSU9FuOXZLG8JqbAaRxeAT7LjsFFpFXA4T8NUygSypEL6pv8XOFQs4eA9Wzo/Oj3hwvJx0e7R7w7NO2bzKWYIoutVi9TirKDiiv+adkQt4vGqPGMGuq6Z0RyhulntynwaFw0dfqu75pPZvGouHpcTs94vviPHpEc3jUQ2k0yWb3X4pZ0y7038rCgnZmhq0XGql16COEZ4UUeQ/ZixMrcBBDWwEG1SQFSl48lXCWNsH2rCpXrRBUlVqd/YKMLDSJJlE56K/UMcPDK1S5tRAKfHpNv+ElB4/5mxH9UKoTLDnkGkiw14sduFX5+FlJW7y2+dYz9cw9lgBynxRQvTYNh2B7trchuqjUZQlu8V4WaY=
