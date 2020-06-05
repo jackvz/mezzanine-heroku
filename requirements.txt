@@ -1,6 +1,6 @@
 pytest==4.3.1
 twine==1.13.0
-Django==1.11.20
+Django==1.11.29
 django-contrib-comments==1.9.1
 django-filter==2.1.0
 requests==2.21.0

@@ -20,7 +20,7 @@ EMAIL = 'jackvanzyl@icloud.com'
 
 # What packages are required for this module to be executed?
 REQUIRED = [
-    'Django==1.11.20', 'django-contrib-comments==1.9.1', 'django-filter==2.1.0', 'requests==2.21.0', 'requests-oauthlib==1.0.0', 'Mezzanine==4.3.1', 'Cartridge==0.13.0', 'gunicorn==19.9.0', 'psycopg2==2.7.7', 'whitenoise==4.1.2', 'dj-database-url==0.5.0'
+    'Django==1.11.29', 'django-contrib-comments==1.9.1', 'django-filter==2.1.0', 'requests==2.21.0', 'requests-oauthlib==1.0.0', 'Mezzanine==4.3.1', 'Cartridge==0.13.0', 'gunicorn==19.9.0', 'psycopg2==2.7.7', 'whitenoise==4.1.2', 'dj-database-url==0.5.0'
 ]
 
 # The rest you shouldn't have to touch too much :)
